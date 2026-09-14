@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Токены темы: кремовый фон, ягодный акцент. Нейтральные с тёплой примесью, не серые. */
+@theme {
+  --font-sans: "Manrope Variable", system-ui, sans-serif;
+  --font-display: "Playfair Display Variable", Georgia, serif;
+
+  --color-bg: #faf6f2;
+  --color-surface: #ffffff;
+  --color-soft: #f4e8e4;
+  --color-ink: #2a1519;
+  --color-muted: #6e5559;
+  --color-line: #eadcd6;
+  --color-line-strong: #cdb4ae;
+  --color-accent: #9b2c4c;
+  --color-accent-hover: #7f2340;
+  --color-accent-text: #9b2c4c;
+  --color-on-accent: #ffffff;
+  --color-gold: #c7955b;
+}
+
+:root {
+  --radius-btn: 999px;
+  --radius-field: 14px;
+  --radius-card: 24px;
+  --shadow-btn:
+    0 1px 2px rgba(123, 39, 64, 0.12), 0 10px 24px -12px rgba(123, 39, 64, 0.45);
+  --shadow-card:
+    0 1px 2px rgba(43, 22, 32, 0.06), 0 18px 40px -20px rgba(43, 22, 32, 0.22);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid #9b2c4c;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
