@@ -4,6 +4,10 @@
 
 **Живая версия:** https://baibakova2005-art.github.io/demo-manikyur/
 
+![Первый экран](screenshots/oblozhka.jpg)
+
+Полные снимки страницы: [компьютер](screenshots/kompyuter.jpg) · [телефон 360 px](screenshots/telefon.jpg)
+
 Маникюр с покрытием, который держится три недели. Запись онлайн, стерильные инструменты, гарантия 7 дней на покрытие.
 
 ## Стек
