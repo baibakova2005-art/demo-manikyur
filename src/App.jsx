@@ -186,7 +186,10 @@ export default function App() {
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 pb-16 pt-12 md:grid-cols-[1.15fr_0.85fr] md:pb-24 md:pt-20">
             <div>
               <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-soft px-4 py-1.5 text-sm font-semibold text-accent-text">
-                Студия маникюра · 3 минуты от метро Сокол
+                <span className="sm:hidden">Студия маникюра у метро Сокол</span>
+                <span className="hidden sm:inline">
+                  Студия маникюра · 3 минуты от метро Сокол
+                </span>
               </p>
               <h1 className="font-display text-[clamp(2.4rem,1.4rem+4.2vw,4.4rem)] leading-[1.04] tracking-[-0.02em]">
                 Маникюр, который держится{" "}
